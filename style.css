@@ -1,0 +1,41 @@
+body {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.neon-blue {
+  color: #4fc3f7;
+  text-shadow: 0 0 2px #4fc3f7, 0 0 4px #2196f3, 0 0 6px #1565c0;
+}
+
+.neon-purple {
+  color: #ba68c8;
+  text-shadow: 0 0 2px #ba68c8, 0 0 4px #8e24aa, 0 0 6px #6a1b9a;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease forwards;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+/* Link menu sidebar */
+.menu-link {
+  @apply px-4 py-2 bg-black border-2 border-cyan-400 text-cyan-300 rounded-lg transform transition duration-300 hover:scale-105 hover:bg-cyan-600 hover:text-black;
+}

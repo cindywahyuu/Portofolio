@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio GIS</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-black text-gray-100 flex">
+
+  <!-- Sidebar -->
+  <aside id="sidebar"
+    class="w-64 min-h-screen bg-gradient-to-b from-blue-950 via-black to-cyan-900 p-6 flex flex-col space-y-6 fixed inset-y-0 left-0 transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-50">
+    <!-- Tombol close -->
+    <button id="closeSidebar" class="md:hidden text-white absolute top-4 right-4 text-2xl">✖</button>
+
+    <div class="text-center">
+      <img src="https://via.placeholder.com/100" class="w-24 h-24 mx-auto rounded-full border-4 border-cyan-400"
+        alt="Foto">
+      <h2 class="neon-blue text-xl font-bold mt-4">CINDY WAHYU KARISMA</h2>
+      <h3 class="neon-purple text-lg font-bold">GIS</h3>
+    </div>
+    <nav class="flex flex-col space-y-3 mt-6">
+      <a href="#about" class="menu-link">Tentang</a>
+      <a href="#education" class="menu-link">Pendidikan</a>
+      <a href="#experience" class="menu-link">Pengalaman</a>
+      <a href="#projects" class="menu-link">Proyek</a>
+      <a href="#skills" class="menu-link">Skill</a>
+      <a href="#certificate" class="menu-link">Sertifikat</a>
+    </nav>
+  </aside>
+
+  <!-- Tombol Hamburger -->
+  <button id="openSidebar" class="md:hidden fixed top-4 left-4 z-50 text-white text-3xl">☰</button>
+
+  <!-- Konten Utama -->
+  <main class="flex-1 p-10 space-y-16 bg-gradient-to-br from-black via-blue-950 to-cyan-950 md:ml-64">
+
+    <!-- Hero -->
+    <section id="about" class="text-center py-16">
+      <h1 class="text-3xl font-bold text-cyan-400 animate-fadeInUp">
+        Halo, Saya Cindy Wahyu Karisma
+      </h1>
+      <p class="mt-2 text-lg text-gray-300 animate-fadeInUp delay-200">
+        Spesialis: WebGIS | Machine Learning | Data Analyst
+      </p>
+      <p class="mt-4 max-w-2xl mx-auto text-gray-400 animate-fadeInUp delay-400">
+        Selama masa studi, saya terbiasa bekerja dengan data spasial baik raster maupun vektor, serta menguasai
+        berbagai perangkat lunak pemetaan seperti ArcGIS, QGIS, Google Earth Engine, hingga pemrograman Python
+        dan R untuk analisis data geospasial. Saya juga mendalami pengembangan aplikasi berbasis WebGIS dan
+        Mobile GIS dengan framework modern seperti Leaflet.js, ArcGIS Maps SDK, Ionic, dan React Native.
+      </p>
+    </section>
+
+    <!-- Pendidikan -->
+    <section id="education" class="bg-blue-950 p-6 rounded-xl shadow-lg" data-aos="fade-up">
+      <h2 class="text-2xl font-semibold text-cyan-400 mb-4">🎓 Pendidikan</h2>
+      <div class="space-y-3">
+        <div class="bg-black p-4 rounded-lg border border-cyan-600" data-aos="zoom-in">
+          <h3 class="font-bold">Universitas Gadjah Mada</h3>
+          <p class="text-sm text-gray-400">Sistem Informasi Geografis (2022 - 2026)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pengalaman -->
+    <section id="experience" class="bg-blue-950 p-6 rounded-xl shadow-lg">
+      <h2 class="text-2xl font-semibold text-cyan-400 mb-4">💼 Pengalaman Kerja</h2>
+      <div class="space-y-3">
+
+        <div class="bg-black p-4 rounded-lg border border-cyan-600 relative">
+          <div class="flex justify-between items-center cursor-pointer toggle-card">
+            <div>
+              <h3 class="font-bold">Magang PSBA UGM</h3>
+              <p class="text-sm text-gray-400">Analisis Mikrozonasi Gempa Bumi (2025)</p>
+            </div>
+            <span class="arrow transition-transform duration-300">▼</span>
+          </div>
+          <div class="hidden mt-3 text-gray-300 card-content">
+            <p>
+              Selama magang saya terlibat dalam analisis mikrozonasi gempa bumi berbasis data geospasial.
+              Menggunakan metode analisis SIG untuk mendukung kajian kebencanaan.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Proyek -->
+    <section id="projects" class="bg-blue-950 p-6 rounded-xl shadow-lg" data-aos="fade-right">
+      <h2 class="text-2xl font-semibold text-cyan-400 mb-6">🛠️ Proyek</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-black p-4 rounded-lg border border-cyan-600" data-aos="flip-left">
+          <h3 class="font-bold">WebGIS Monitoring RTH</h3>
+          <p class="text-sm text-gray-400 mt-2">Sistem deteksi kualitas udara berbasis RTH</p>
+          <button class="mt-3 px-4 py-2 bg-cyan-600 text-black font-bold rounded hover:bg-cyan-400">Lihat</button>
+        </div>
+        <div class="bg-black p-4 rounded-lg border border-cyan-600" data-aos="flip-left">
+          <h3 class="font-bold">WebGIS Monitoring RTH</h3>
+          <p class="text-sm text-gray-400 mt-2">Sistem deteksi kualitas udara berbasis RTH</p>
+          <button class="mt-3 px-4 py-2 bg-cyan-600 text-black font-bold rounded hover:bg-cyan-400">Lihat</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="bg-blue-950 p-6 rounded-xl shadow-lg">
+      <h2 class="text-2xl font-semibold text-cyan-400 mb-4">⚡ Skill</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-black p-4 rounded-lg border border-cyan-600">
+          <h3 class="font-bold text-cyan-300">Softskill</h3>
+          <ul class="list-disc list-inside text-gray-400 text-sm mt-2">
+            <li>Komunikasi</li>
+            <li>Problem Solving</li>
+          </ul>
+        </div>
+        <div class="bg-black p-4 rounded-lg border border-cyan-600">
+          <h3 class="font-bold text-cyan-300">Hardskill</h3>
+          <ul class="list-disc list-inside text-gray-400 text-sm mt-2">
+            <li>Analisis Geospasial</li>
+            <li>Machine Learning</li>
+          </ul>
+        </div>
+        <div class="bg-black p-4 rounded-lg border border-cyan-600">
+          <h3 class="font-bold text-cyan-300">Software</h3>
+          <ul class="list-disc list-inside text-gray-400 text-sm mt-2">
+            <li>ArcGIS / QGIS</li>
+            <li>Google Earth Engine</li>
+            <li>Python, R</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sertifikat -->
+    <section id="certificate" class="bg-blue-950 p-6 rounded-xl shadow-lg">
+      <h2 class="text-2xl font-semibold text-cyan-400 mb-4">📜 Sertifikat</h2>
+      <img src="https://via.placeholder.com/500x300" class="rounded-lg border-4 border-cyan-500">
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-gray-400 pt-10 border-t border-gray-700">
+      <p>© 2025 Nama Kamu | Dibuat dengan ❤️ | Tema: Lego Style</p>
+    </footer>
+  </main>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
