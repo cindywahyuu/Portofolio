@@ -31,21 +31,30 @@ body {
 }
 
 .nav-link {
-  padding: 0.5rem 1rem; /* px-4 py-2 */
+  display: block;
+  padding: 10px 15px;
   background-color: black;
-  border: 2px solid #22d3ee; /* border-cyan-400 */
-  color: #67e8f9; /* text-cyan-300 */
-  border-radius: 0.5rem; /* rounded-lg */
-  transition: all 0.3s ease; /* transition duration-300 */
-  text-decoration: none;
-  display: inline-block;
+  border: 2px solid cyan;
+  color: cyan;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 
+/* Hover (desktop) */
 .nav-link:hover {
   transform: scale(1.05);
-  background-color: #0891b2; /* hover:bg-cyan-600 */
-  color: black; /* hover:text-black */
+  background-color: cyan;
+  color: black;
 }
+
+/* Active (HP saat disentuh) */
+.nav-link:active {
+  transform: scale(0.95);
+  background-color: cyan;
+  color: black;
+}
+
 
 
 .animate-fadeInUp {
