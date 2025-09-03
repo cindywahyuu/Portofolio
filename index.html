@@ -9,32 +9,47 @@
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cristik&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@400;500&family=Montserrat:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+
 </head>
 
 <body class="bg-black text-gray-100 flex">
 
-  <!-- Sidebar -->
+  <!-- Sidebar Scroll -->
   <aside id="sidebar"
+  class="w-64 min-h-screen bg-gradient-to-b from-blue-950 via-black to-cyan-900 p-6 flex flex-col space-y-6 fixed inset-y-0 left-0 transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-50 overflow-y-auto">
+  
+  <!-- Sidebar Tanpa Scroll -->
+  <!-- <aside id="sidebar"
     class="w-64 min-h-screen bg-gradient-to-b from-blue-950 via-black to-cyan-900 p-6 flex flex-col space-y-6 fixed inset-y-0 left-0 transform -translate-x-full md:translate-x-0 transition-transform duration-300 z-50">
-    <!-- Tombol close -->
+    -->
+ <!-- Tombol close -->
     <button id="closeSidebar" class="md:hidden text-white absolute top-4 right-4 text-2xl">✖</button>
 
     <div class="text-center">
-      <img src="https://via.placeholder.com/100" class="w-24 h-24 mx-auto rounded-full border-4 border-cyan-400"
-        alt="Foto">
+      <div class="w-32 h-32 mx-auto rounded-full border-4 border-cyan-400 overflow-hidden">
+        <img src="img/foto.jpg" alt="Foto" class="w-full h-full object-cover">
+      </div>
       <h2 class="neon-blue text-xl font-bold mt-4">CINDY WAHYU KARISMA</h2>
       <h3 class="neon-purple text-lg font-bold">GIS</h3>
     </div>
-    <nav class="flex flex-col space-y-3 mt-6">
-  <a href="#about" class="nav-link">Tentang</a>
-  <a href="#education" class="nav-link">Pendidikan</a>
-  <a href="#experience" class="nav-link">Pengalaman</a>
-  <a href="#projects" class="nav-link">Proyek</a>
-  <a href="#skills" class="nav-link">Skill</a>
-  <a href="#certificate" class="nav-link">Sertifikat</a>
-</nav>
+    <nav class="flex flex-col space-y-2 mt-6">
+      <a href="#about" class="nav-link">Tentang</a>
+      <a href="#education" class="nav-link">Pendidikan</a>
+      <a href="#experience" class="nav-link">Pengalaman</a>
+      <a href="#projects" class="nav-link">Proyek</a>
+      <a href="#skills" class="nav-link">Skill</a>
+      <a href="#certificate" class="nav-link">Sertifikat</a>
+       <a href="#contact" class="nav-link">Kontak</a>
+    </nav>
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
   </aside>
 
@@ -58,6 +73,18 @@
         dan R untuk analisis data geospasial. Saya juga mendalami pengembangan aplikasi berbasis WebGIS dan
         Mobile GIS dengan framework modern seperti Leaflet.js, ArcGIS Maps SDK, Ionic, dan React Native.
       </p>
+      <!-- Tambahan button kapsul -->
+      <div class="mt-6 animate-fadeInUp delay-600">
+        <button
+          class="px-6 py-2 bg-purple-500 text-white font-semibold rounded-full shadow-md hover:bg-cyan-600 transition">
+          Curiculum Vitae
+        </button>
+        <button
+          class="px-6 py-2 bg-purple-500 text-white font-semibold rounded-full shadow-md hover:bg-cyan-600 transition">
+          Hubungi Saya
+        </button>
+      </div>
+
     </section>
 
     <!-- Pendidikan -->
@@ -73,7 +100,7 @@
 
     <!-- Pengalaman -->
     <section id="experience" class="bg-blue-950 p-6 rounded-xl shadow-lg">
-      <h2 class="text-2xl font-semibold text-cyan-400 mb-4">💼 Pengalaman Kerja</h2>
+      <h2 class="text-2xl font-semibold text-cyan-400 mb-4">💼 Pengalaman</h2>
       <div class="space-y-3">
 
         <div class="bg-black p-4 rounded-lg border border-cyan-600 relative">
@@ -92,6 +119,21 @@
           </div>
         </div>
 
+        <div class="bg-black p-4 rounded-lg border border-cyan-600 relative">
+          <div class="flex justify-between items-center cursor-pointer toggle-card">
+            <div>
+              <h3 class="font-bold">Magang PSBA UGM</h3>
+              <p class="text-sm text-gray-400">Analisis Mikrozonasi Gempa Bumi (2025)</p>
+            </div>
+            <span class="arrow transition-transform duration-300">▼</span>
+          </div>
+          <div class="hidden mt-3 text-gray-300 card-content">
+            <p>
+              Selama magang saya terlibat dalam analisis mikrozonasi gempa bumi berbasis data geospasial.
+              Menggunakan metode analisis SIG untuk mendukung kajian kebencanaan.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -149,9 +191,38 @@
 
     <!-- Footer -->
     <footer class="text-center text-gray-400 pt-10 border-t border-gray-700">
-      <p>© 2025 Nama Kamu | Dibuat dengan ❤️ | Tema: Lego Style</p>
+       <p>Hubungi Saya Melalui</p>
+      <div class="flex justify-center space-x-6 mb-4">
+        <!-- Email -->
+        <a href="mailto:cindywahyukarisma@mail.ugm.ac.id" target="_blank"
+          class="text-cyan-400 hover:text-cyan-600 transition">
+          <img src="img/gmail_5968534.png" alt="Email" class="w-6 h-6 inline-block">
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/6285851740335" target="_blank"
+          class="text-cyan-400 hover:text-cyan-600 transition">
+          <img src="img/social_13051765.png" alt="Email" class="w-8 h-8 inline-block">
+        </a>
+        <!-- Instagram -->
+        <a href="https://Instagram.com/cindywahyuu" target="_blank"
+          class="text-cyan-400 hover:text-cyan-600 transition">
+          <img src="img/instagram_408758.png" alt="Email" class="w-8 h-8 inline-block">
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://linkedin.com/in/cindywahyukarisma" target="_blank"
+          class="text-cyan-400 hover:text-cyan-600 transition">
+          <img src="img/linkedin_174857.png" alt="Email" class="w-6 h-6 inline-block">
+        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/cindywahyukarisma" target="_blank"
+          class="text-cyan-400 hover:text-cyan-600 transition">
+          <img src="img/github_1051326.png" alt="Email" class="w-8 h-8 inline-block">
+        </a>
+      </div>
+      <p>© 2025 Cindy Wahyu Karisma</p>
     </footer>
   </main>
+
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
